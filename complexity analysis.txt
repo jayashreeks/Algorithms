@@ -1,0 +1,35 @@
+#include<stdio.h>
+int f,g,n=1,c1=8,c2=1,h,i;
+void check()
+{   if((c1<=n) || (c2>=n))
+        printf("Constant chosen is not correct\n");
+    else
+        printf("Value of n0 is %d\n",n);
+    }
+void read() {
+     while(1) {
+        f=7*n*n+n+5;
+        g=c1*n*n;
+        h=c2*n*n;
+        if((f<=g) && (f>=h))
+          break;
+        else
+          n++;
+    }
+    }
+void iterate() {
+    for(i=1;i<=10;i++){
+        f=7*i*i+i+5;
+        g=c1*i*i;
+        h=c2*i*i;
+        printf("Value of f(n) for n=%d is %d\n",i,f);
+        printf("Value of c1*g(n) for n=%d is %d\n",i,g);
+        printf("Value of c2*g(n) for n=%d is %d\n",i,h);
+        }
+    }
+int main() {
+   read();
+   check();
+   iterate();
+   return 0;
+   }
